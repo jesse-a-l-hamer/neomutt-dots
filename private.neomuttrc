@@ -1,5 +1,5 @@
-source ./private/accounts.neomuttrc
-source ./private/crypt.neomuttrc
-source ./private/mailinglists.neomuttrc
-source ./private/notmuch.neomuttrc
-source ./private/settings.neomuttrc
+source ~/.config/neomutt-private/accounts.neomuttrc
+source ~/.config/neomutt-private/crypt.neomuttrc
+source ~/.config/neomutt-private/mailinglists.neomuttrc
+source ~/.config/neomutt-private/notmuch.neomuttrc
+source ~/.config/neomutt-private/settings.neomuttrc
