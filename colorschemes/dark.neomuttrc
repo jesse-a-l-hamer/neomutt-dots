@@ -1,0 +1,53 @@
+color normal                             default  default
+
+color index_collapsed       bold         color12  default
+
+color index_author                       color2   default  ~N
+color index_author                       color10  default  ~U
+color index_author                       color11  default  ~F
+color index_author                       color3   default  ~T
+color index_author                       color1   default  ~D
+
+color index_date                         color2   default  ~N
+color index_date                         color10  default  ~U
+color index_date                         color11  default  ~F
+color index_date                         color3   default  ~T
+color index_date                         color1   default  ~D
+
+color index_flags                        color2   default  ~N
+color index_flags                        color10  default  ~U
+color index_flags                        color11  default  ~F
+color index_flags                        color3   default  ~T
+color index_flags                        color1   default  ~D
+
+color attachment                         color5   default
+color signature                          color8   default
+color search                             color4   default
+
+color indicator                          default  color8 
+color error                              color1   default
+color tree                               color15  default
+color tilde                              color15  default
+
+color hdrdefault                         color13  default
+color header                             color12  default  "^From:"
+color header                             color15  default  "^Subject:"
+
+color quoted                             color15  default
+color quoted1                            color7   default
+color quoted2                            color8   default
+color quoted3                            color0   default
+color quoted4                            color0   default
+color quoted5                            color0   default
+
+color body                               color2   default  [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+
+color body                               color2   default  (https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+
+color body                               color4   default  (^|[[:space:]])\\*[^[:space:]]+\\*([[:space:]]|$)
+color body                               color4   default  (^|[[:space:]])_[^[:space:]]+_([[:space:]]|$)
+color body                               color4   default  (^|[[:space:]])/[^[:space:]]+/([[:space:]]|$)
+
+color sidebar_background                 color7   color0
+color sidebar_highlight                  color0   color15
+color sidebar_flagged                    color11  default
+color sidebar_new                        color2   default
+color sidebar_unread                     color10  default

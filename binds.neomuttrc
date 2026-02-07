@@ -1,0 +1,57 @@
+unbind attach,browser,index,pager    g
+unbind index,pager                   d
+unbind index,pager                   <space>
+
+bind   alias,attach,browser,pager    h               exit
+bind   alias,browser                 l               select-entry
+
+bind   attach                        l               view-attach
+bind   attach,browser,index,pager    \Cd             half-down
+bind   attach,browser,index,pager    \Cu             half-up
+bind   attach,browser,index,pager    \Cf             next-page
+bind   attach,browser,index,pager    \Cb             previous-page
+bind   attach,index                  gg              first-entry
+bind   attach,index                  G               last-entry
+bind   attach,index,pager            gh              help
+bind   attach,index,pager            R               group-reply
+
+bind   browser,pager,index           N               search-opposite
+bind   browser                       \Ce             next-line
+bind   browser                       \Cy             previous-line
+
+bind   editor                        <tab>           complete-query
+bind   editor                        \Ct             complete
+
+bind   index                         j               next-entry
+bind   index                         k               previous-entry
+bind   index                         l               display-message
+unbind index                         h
+bind   index                         /               search
+bind   index                         ?               limit
+bind   index                         \<              vfolder-window-backward
+bind   index                         \>              vfolder-window-forward
+bind   index                         \^              vfolder-window-reset
+bind   index                         za              collapse-thread
+bind   index                         zA              collapse-all # Missing :folddisable/foldenable
+bind   index,pager                   dd              delete-message
+bind   index,pager                   dT              delete-thread
+bind   index,pager                   dt              delete-subthread
+bind   index,pager                   gt              next-thread
+bind   index,pager                   gT              previous-thread
+bind   index,pager                   gr              recall-message
+bind   index,pager                   gq              change-vfolder
+bind   index,pager                   gQ              vfolder-from-query
+bind   index,pager                   +               entire-thread
+bind   index,pager                   gb              sidebar-toggle-visible
+bind   index,pager                   \Cn             sidebar-next
+bind   index,pager                   \Cp             sidebar-prev
+bind   index,pager                   \Cy             sidebar-open
+
+bind   pager                         l               view-attachments
+bind   pager                         k               previous-line
+bind   pager                         j               next-line
+bind   pager                         gg              top
+bind   pager                         G               bottom
+bind   pager                         H               display-toggle-weed
+
+# vim: syn=neomuttrc

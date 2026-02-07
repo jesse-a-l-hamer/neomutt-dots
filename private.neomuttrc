@@ -1,0 +1,5 @@
+source ./private/accounts.neomuttrc
+source ./private/crypt.neomuttrc
+source ./private/mailinglists.neomuttrc
+source ./private/notmuch.neomuttrc
+source ./private/settings.neomuttrc

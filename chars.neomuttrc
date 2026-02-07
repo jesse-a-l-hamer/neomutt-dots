@@ -1,0 +1,5 @@
+set crypt_chars  = "󰒃"
+set flag_chars   = "󰧧󱫅󰼠󰇰󰇮󰻨󰻧󰗯󰗯"
+set from_chars   = ""
+set status_chars = "󰪲󰛏󰍁󰁦"
+set to_chars     = "󰯧󰭒󰀏󰤴󰭔󰭘󰭕"

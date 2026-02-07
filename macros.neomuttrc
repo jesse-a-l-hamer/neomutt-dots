@@ -1,0 +1,21 @@
+macro attach         V \
+                     "<pipe-entry>iconv -c --to-code=UTF8 > ~/.cache/neomutt/mail.html<enter><shell-escape>app2unit-open -- ~/.cache/neomutt/mail.html<enter>" \
+                     "view in GUI browser"
+macro attach         A \
+                     "<pipe-message>~/.local/bin/vcalendar-filter | mutt2khal<enter>" \
+                     "pass calendar item to khal"
+macro attach,compose gx \
+                     "<pipe-entry>urlscan -C true<Enter>" \
+                     "call urlscan to extract URLs out of a message"
+macro index          \` \
+                     "<tag-pattern>~R !~D !~F<enter><tag-prefix><save-message>+archived<enter>" \
+                     "archive"
+macro index,pager    gx \
+                     "<pipe-message>urlscan -C true<Enter>" \
+                     "call urlscan to extract URLs out of a message"
+macro index,pager    A \
+                     "<pipe-message>khard add-email --headers=from,cc --skip-already-added<enter>" \
+                     "add the sender and cc email addresses to khard"
+macro index,pager    \CL \
+                     "<enter-command>$my_index_format_pre"F"$my_index_format_post<enter><redraw-screen>" \
+                     "force-recompute index_format"

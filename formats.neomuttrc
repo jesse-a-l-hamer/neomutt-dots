@@ -1,0 +1,69 @@
+# ALIAS
+# set alias_format = ""
+
+# ATTACH
+# set attach_format = ""
+
+# AUTOCRYPT ACCT
+# set autocrypt_acct_format = ""
+
+# COMPOSE
+set compose_format = "--+(%v) Compose  [Approx. msg size: %l   Atts: %a]%>-"
+
+# DATE
+set date_format = "%y-%m-%d %T"
+
+# FOLDER
+# set folder_format = ""
+
+# FORWARD
+set forward_format="[fwd] %s (from: %a)"
+
+# GROUP INDEX
+# set group_index_format = ""
+
+# HISTORY
+# set history_format = ""
+
+# INDEX
+# https://wiki.archlinux.org/title/Mutt#Variable_column_width
+# From field gets 30% of remaining space, Subject gets 70%.
+# Remaining space is the total width minus the other fields (35), minus the sidebar (32)
+set my_index_format_pre='set my_col_from = `echo $((30 * ($(tput cols)-36-32) / 100))`; set my_col_subject = `echo $((70 * ($(tput cols)-36-32) / 100))`; set index_format="%=5c| %zs %zc %<zt?%zt&%T> [%d] %-$my_col_from.${my_col_from}'
+set my_index_format_post=' %?M?<%M> ?%-$my_col_subject.${my_col_subject}s"'
+
+folder-hook ".*(sent|draft).*" "$my_index_format_pre"t"$my_index_format_post"
+folder-hook ! ".*(sent|draft).*" "$my_index_format_pre"F"$my_index_format_post"
+
+# MAILBOX FOLDER
+# set mailbox_folder_format = ""
+
+# MESSAGE ID
+# set message_id_format = ""
+
+# MESSAGE
+# set message_format = ""
+
+# PAGER
+set pager_format = " %zs %zc %<zt?%zt&%T> | %C/%m: %.20n %> %s"
+
+# PATTERN
+# set pattern_format = ""
+
+# PGP ENTRY
+# set pgp_entry_format = ""
+
+# QUERY
+# set query_format = ""
+
+# SIDEBAR
+set sidebar_format = "%D%<F? [%F]>%* %<N?%N/>%S"
+
+# STATUS
+set status_format = " %r (%v) %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]----%>-(%P)---"
+
+# TS ICON
+# set ts_icon_format = ""
+
+# TS STATUS
+# set ts_status_format = ""

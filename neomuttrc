@@ -1,0 +1,103 @@
+########################
+### GENERAL SETTINGS ###
+########################
+
+alternates = "^jhamer90811@gmail.com$ ^drs.lewis.hamer@gmail.com$ ^jesse.a.l.hamer@gmail.com$"
+auto_view text/calendar text/* image/* audio/* video/*
+
+set   abort_nosubject=no
+set   abort_unmodified=no
+unset arrow_cursor
+set   ask_cc
+unset beep
+unset bounce_delivered
+# set   charset="utf-8"
+# set   color_directcolor
+set   collapse_all
+unset collapse_unread
+set   confirm_create
+set   confirm_append
+set   delete=yes
+set   edit_headers
+set   editor="nvim"
+set   encode_from
+set   fast_reply
+set   fcc_clear
+set   followup_to
+unset force_name
+set   forward_decode
+set   forward_decrypt
+set   header
+set   header_cache="~/.cache/neomutt"
+set   header_cache_compress_method="zstd"
+set   header_cache_compress_level=3
+# unset help
+set   hide_missing
+set   ignore_list_reply_to
+set   include=yes
+set   ispell=hunspell
+set   keep_flagged
+set   mail_check=5
+set   mail_check_stats
+set   mail_check_stats_interval=60
+set   mailcap_path="~/.mailcap"
+set   mark_old
+unset markers
+set   mbox=+mbox
+set   mbox_type=Maildir
+unset me_too
+set   mime_forward_rest=ask-no
+set   move=no
+set   new_mail_command="notify-send -a NeoMutt -i '/usr/share/neomutt/logo/neomutt-32.png' -u low -c mail 'New Email Received!' '%b mailboxes have new mail' &"
+set   pager_context=3
+set   pager_index_lines=6
+set   pager_stop
+set   pipe_decode
+set   print=ask-no
+# set   print_command="??"
+set   print_split=yes
+set   query_command="echo %s | xargs khard email --parsable --search-in-source-files --"
+set   quit=yes
+set   quote_regex="^ *[a-zA-Z]*[>|][>:|]*"
+set   read_inc=50
+set   recall=ask-no
+set   reply_regex="^((re|aw|sv)([\\[0-9\\]+])*:[ \t]*)+[ \t]*"
+set   reply_to=ask-yes
+set   reverse_alias
+set   reverse_name
+set   reverse_real_name
+unset rfc2047_parameters
+set   save_name
+set   send_charset="us-ascii:utf-8"
+set   sendmail="/usr/bin/msmtp"
+set   sendmail_wait=-1
+set   sig_dashes
+set   sleep_time=0
+set   smart_wrap
+set   smileys="^$"
+set   sort=reverse-last-date
+set   sort_aux=date
+set   ssl_force_tls
+unset strict_threads
+set   suspend=no
+# set   text_flowed
+set   tilde
+set   timeout=15
+unset use_domain
+set   use_from
+# unset use_ipv6
+set   use_threads="threads"
+unset wait_key
+set   wrap=-2
+set   write_inc=50
+
+####################
+### SOURCE FILES ###
+####################
+
+source ./binds.neomuttrc
+source ./chars.neomuttrc
+source ./colorschemes/dark.neomuttrc
+source ./formats.neomuttrc
+source ./macros.neomuttrc
+source ./sidebar.neomuttrc
