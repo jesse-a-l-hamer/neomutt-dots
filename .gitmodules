@@ -1,0 +1,3 @@
+[submodule "scripts/mutt-filters"]
+	path = scripts/mutt-filters
+	url = https://github.com/terabyte/mutt-filters
