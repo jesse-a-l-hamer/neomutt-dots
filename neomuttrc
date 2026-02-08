@@ -100,4 +100,5 @@ source ./chars.neomuttrc
 source ./colorschemes/dark.neomuttrc
 source ./formats.neomuttrc
 source ./macros.neomuttrc
+source ./private.neomuttrc
 source ./sidebar.neomuttrc
