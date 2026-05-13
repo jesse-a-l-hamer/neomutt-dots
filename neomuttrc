@@ -21,6 +21,7 @@ set   delete=yes
 set   edit_headers
 set   editor="nvim"
 set   encode_from
+set   envelope_from=yes
 set   fast_reply
 set   fcc_clear
 set   followup_to
@@ -69,7 +70,7 @@ set   reverse_real_name
 unset rfc2047_parameters
 set   save_name
 set   send_charset="us-ascii:utf-8"
-set   sendmail="/usr/bin/msmtp"
+set   sendmail="/usr/local/bin/msmtpq"
 set   sendmail_wait=-1
 set   sig_dashes
 set   sleep_time=0
@@ -84,7 +85,7 @@ set   suspend=no
 set   tilde
 set   timeout=15
 unset use_domain
-set   use_from
+set   use_from=yes
 # unset use_ipv6
 set   use_threads="threads"
 unset wait_key
