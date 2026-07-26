@@ -49,7 +49,7 @@ set   mbox_type=Maildir
 unset me_too
 set   mime_forward_rest=ask-no
 set   move=no
-set   new_mail_command="notify-send -a NeoMutt -i '/usr/share/neomutt/logo/neomutt-32.png' -u low -c mail 'New Email Received!' '%b mailboxes have new mail' &"
+set   new_mail_command="notify-send -a NeoMutt -i '/usr/share/neomutt/logo/neomutt-32.png' -c mail 'New Email Received!' '%b mailboxes have new mail' &"
 set   pager_context=3
 set   pager_index_lines=6
 set   pager_stop
